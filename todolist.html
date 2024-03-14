@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>task-2</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todolist">
+            <div class="heading">
+          <h1 style="font-size: 1.2cm;">TO DO LIST <img  src = "todolist.png"></h1>
+          <div class="rowline">
+            <input id="textCondition"  placeholder="Enter a task to do">
+            <button id="addBut" onclick="addTask()"> ADD TO LIST </button>
+          </div>
+            </div>
+            <div class="bodycontent">
+       <ul id="tasks">
+       </ul>
+            </div>
+            
+            <div class="lowerdetails">
+            
+            <button onclick="clearAll()">Clear</button>
+            <br><br><br><br>
+            <h1 >Total Tasks Assigned:<span id="not"></span></h1>
+            <h1 >Total Tasks Completed:<span id="completed"></span></h1>
+            <br><br>
+            </div>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>
